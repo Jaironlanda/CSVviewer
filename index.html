@@ -107,6 +107,7 @@
             Papa.parse(url, {
                 "download": true,
                 "header": true,
+                "skipEmptyLines": true,
                 "dynamicTyping": true,
                 "complete": results => {
                     if ($.fn.DataTable.isDataTable("#wtp-data")) {
